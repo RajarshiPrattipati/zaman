@@ -1,6 +1,6 @@
 # Zaman Technical Services website
 
-Static site served by GitHub Pages at https://rajarshiprattipati.github.io/zaman/
+Static site hosted on Vercel at https://zaman-psi.vercel.app/
 
 ## Adding a blog post
 

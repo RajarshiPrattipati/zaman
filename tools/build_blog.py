@@ -17,9 +17,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 POSTS_DIR = ROOT / "blog" / "posts"
-SITE = "https://rajarshiprattipati.github.io"
-BASE = "/zaman"            # path the site is served from ("" for a root domain)
+SITE = "https://zaman-psi.vercel.app"
+BASE = ""  # path the site is served from, e.g. "/zaman" for a GitHub project page
 URL = SITE + BASE
+REL = ""                  # relative prefix back to the site root for the page being rendered
 WA = "971564308235"
 TEL = "+971541263162"
 BRAND = "Zaman Technical Services"
@@ -45,7 +46,7 @@ def parse_post(path):
     meta["words"] = words
     meta["minutes"] = max(1, math.ceil(words / 220))
     meta["html"], meta["toc"] = md_to_html(body)
-    meta["url"] = f"{BASE}/blog/{meta['slug']}/"
+    meta["url"] = f"blog/{meta['slug']}/"   # relative to the site root
     return meta
 
 
@@ -56,7 +57,8 @@ def inline(s):
     def link(m):
         text, href = m.group(1), m.group(2)
         if href.startswith("/zaman"):
-            href = BASE + href[len("/zaman"):]
+            # posts live at blog/<slug>/, so the site root is two levels up
+            href = "../../" + href[len("/zaman"):].lstrip("/")
         ext = href.startswith("http") and SITE not in href
         attrs = ' target="_blank" rel="noopener"' if ext else ""
         return f'<a href="{html.escape(href)}"{attrs}>{text}</a>'
@@ -142,8 +144,8 @@ def head(title, desc, canonical, og_type="website", extra=""):
 <meta name="description" content="{d}">
 <meta name="theme-color" content="#141414">
 <link rel="canonical" href="{canonical}">
-<link rel="icon" href="{BASE}/favicon.svg" type="image/svg+xml">
-<link rel="alternate" type="application/rss+xml" title="{BRAND} blog" href="{BASE}/blog/feed.xml">
+<link rel="icon" href="{REL}favicon.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="{BRAND} blog" href="{REL}blog/feed.xml">
 <meta property="og:type" content="{og_type}">
 <meta property="og:site_name" content="{BRAND}">
 <meta property="og:title" content="{t}">
@@ -157,17 +159,17 @@ def head(title, desc, canonical, og_type="website", extra=""):
 <meta name="twitter:description" content="{d}">
 <meta name="twitter:image" content="{URL}/og.png">
 {extra}{FONTS}
-<link rel="stylesheet" href="{BASE}/blog/blog.css">
+<link rel="stylesheet" href="{REL}blog/blog.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head">
   <div class="wrap nav">
-    <a href="{BASE}/" class="brand" aria-label="{BRAND} home">{LOGO}<span class="brand-text"><b>Z<span>A</span>M<span>A</span>N</b><small>Technical Services</small></span></a>
+    <a href="{REL}" class="brand" aria-label="{BRAND} home">{LOGO}<span class="brand-text"><b>Z<span>A</span>M<span>A</span>N</b><small>Technical Services</small></span></a>
     <nav aria-label="Main">
-      <a href="{BASE}/#services">Services</a>
-      <a href="{BASE}/blog/" class="here">Blog</a>
-      <a href="{BASE}/#contact">Contact</a>
+      <a href="{REL}#services">Services</a>
+      <a href="{REL}blog/" class="here">Blog</a>
+      <a href="{REL}#contact">Contact</a>
     </nav>
     <a class="btn btn-yellow nav-call" href="tel:{TEL}">{PHONE_SVG}<span>054 126 3162</span></a>
   </div>
@@ -181,7 +183,7 @@ def foot():
 <footer class="site-foot">
   <div class="wrap foot-grid">
     <div>
-      <a href="{BASE}/" class="brand">{LOGO}<span class="brand-text"><b>Z<span>A</span>M<span>A</span>N</b><small>Technical Services</small></span></a>
+      <a href="{REL}" class="brand">{LOGO}<span class="brand-text"><b>Z<span>A</span>M<span>A</span>N</b><small>Technical Services</small></span></a>
       <p>Renovation, maintenance and building services across Dubai.</p>
     </div>
     <div>
@@ -196,10 +198,10 @@ def foot():
     <div>
       <h2>Site</h2>
       <ul>
-        <li><a href="{BASE}/">Home</a></li>
-        <li><a href="{BASE}/#services">Services</a></li>
-        <li><a href="{BASE}/blog/">Blog</a></li>
-        <li><a href="{BASE}/#contact">Request a quote</a></li>
+        <li><a href="{REL}">Home</a></li>
+        <li><a href="{REL}#services">Services</a></li>
+        <li><a href="{REL}blog/">Blog</a></li>
+        <li><a href="{REL}#contact">Request a quote</a></li>
       </ul>
     </div>
   </div>
@@ -228,7 +230,7 @@ ORG = {"@type": "HomeAndConstructionBusiness", "name": BRAND + " Est.", "url": U
 def card(p, heading="h2"):
     return f"""<article class="card">
   <p class="meta"><span class="cat">{html.escape(p['category'])}</span><time datetime="{p['date']}">{fmt_date(p['date_obj'])}</time></p>
-  <{heading}><a href="{p['url']}">{html.escape(p['title'])}</a></{heading}>
+  <{heading}><a href="{REL}{p['url']}">{html.escape(p['title'])}</a></{heading}>
   <p>{html.escape(p['description'])}</p>
   <p class="more">{p['minutes']} min read</p>
 </article>"""
@@ -246,6 +248,8 @@ def cta():
 
 
 def render_post(p, posts):
+    global REL
+    REL = "../../"
     canonical = URL + f"/blog/{p['slug']}/"
     others = [o for o in posts if o["slug"] != p["slug"]]
     related = sorted(others, key=lambda o: (o["category"] != p["category"], -o["date_obj"].toordinal()))[:3]
@@ -271,7 +275,7 @@ def render_post(p, posts):
 <main id="main">
   <div class="post-hero">
     <div class="wrap narrow">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="{BASE}/">Home</a><span aria-hidden="true">/</span><a href="{BASE}/blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{html.escape(p['category'])}</span></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="{REL}">Home</a><span aria-hidden="true">/</span><a href="{REL}blog/">Blog</a><span aria-hidden="true">/</span><span aria-current="page">{html.escape(p['category'])}</span></nav>
       <h1>{html.escape(p['title'])}</h1>
       <p class="post-meta"><span class="cat">{html.escape(p['category'])}</span><time datetime="{p['date']}">{fmt_date(p['date_obj'])}</time><span>{p['minutes']} min read</span></p>
     </div>
@@ -290,6 +294,8 @@ def render_post(p, posts):
 
 
 def render_index(posts):
+    global REL
+    REL = "../"
     canonical = URL + "/blog/"
     desc = ("Practical guides on renovation, gypsum ceilings, painting, AC, plumbing, tiling and electrical "
             "work for homes and offices in Dubai, from Zaman Technical Services.")
@@ -306,7 +312,7 @@ def render_index(posts):
 <main id="main">
   <div class="post-hero">
     <div class="wrap">
-      <nav class="crumbs" aria-label="Breadcrumb"><a href="{BASE}/">Home</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav>
+      <nav class="crumbs" aria-label="Breadcrumb"><a href="{REL}">Home</a><span aria-hidden="true">/</span><span aria-current="page">Blog</span></nav>
       <h1>Renovation &amp; maintenance guides</h1>
       <p class="lede">Practical advice on ceilings, paint, AC, plumbing, tiling and electrical work in Dubai homes and offices.</p>
     </div>
