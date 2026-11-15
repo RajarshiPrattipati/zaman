@@ -1,0 +1,98 @@
+[
+ {
+  "file": "img/hero-painting.webp",
+  "alt": "Painter rolling yellow paint onto a wall",
+  "photo": "https://unsplash.com/photos/1iho4gvI4-g",
+  "photographer": "Ali Mkumbwa",
+  "w": 1000,
+  "h": 1200
+ },
+ {
+  "file": "img/svc-renovation.webp",
+  "alt": "Kitchen under renovation with cabinets protected in plastic",
+  "photo": "https://unsplash.com/photos/UqNEbyRQ660",
+  "photographer": "Immo Renovation",
+  "w": 900,
+  "h": 600
+ },
+ {
+  "file": "img/svc-ceiling.webp",
+  "alt": "Worker on scaffolding installing a ceiling",
+  "photo": "https://unsplash.com/photos/fsa8AHFoJH8",
+  "photographer": "Glenov Brankovic",
+  "w": 900,
+  "h": 600
+ },
+ {
+  "file": "img/svc-painting.webp",
+  "alt": "Paint roller applying white paint to a wall",
+  "photo": "https://unsplash.com/photos/rMVjOX8nm2U",
+  "photographer": "Andrew Itaga",
+  "w": 900,
+  "h": 600
+ },
+ {
+  "file": "img/work-electrical.webp",
+  "alt": "Electrician working on an electrical panel",
+  "photo": "https://unsplash.com/photos/GXLPLG3_Vf4",
+  "photographer": "Raze Solar",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-plumbing.webp",
+  "alt": "Plumber repairing bathroom plumbing",
+  "photo": "https://unsplash.com/photos/jaP5ClBdIyU",
+  "photographer": "Bhagya Laxmi",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-ac.webp",
+  "alt": "Technician servicing a ceiling air conditioning unit",
+  "photo": "https://unsplash.com/photos/WwzK2S0h6zU",
+  "photographer": "Birmingham Airduct Cleaning Services",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-tiling.webp",
+  "alt": "Tiler cutting a tile with an angle grinder",
+  "photo": "https://unsplash.com/photos/6dnuVViEiR8",
+  "photographer": "Renovations Certified",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-plaster.webp",
+  "alt": "Plasterer smoothing a wall with a trowel",
+  "photo": "https://unsplash.com/photos/-WK5bA14jt0",
+  "photographer": "Derrick Pare",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-carpentry.webp",
+  "alt": "Carpenter using a mitre saw",
+  "photo": "https://unsplash.com/photos/WEWTGkPUVT0",
+  "photographer": "Annie Gray",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-bathroom.webp",
+  "alt": "Finished bathroom with glass shower and vanity",
+  "photo": "https://unsplash.com/photos/g51F6-WYzyU",
+  "photographer": "Lotus Design N Print",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-kitchen.webp",
+  "alt": "Finished kitchen with island and stools",
+  "photo": "https://unsplash.com/photos/ilbLEHMhxMA",
+  "photographer": "Puscas Adryan",
+  "w": 800,
+  "h": 600
+ }
+]

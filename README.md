@@ -9,3 +9,7 @@ Static site hosted on Vercel at https://zaman-psi.vercel.app/
 3. Commit and push.
 
 If the site moves to its own domain, update `SITE` and `BASE` in `tools/build_blog.py` and the absolute URLs in the `<head>` of `index.html`.
+
+## Photos
+
+`img/` holds illustrative stock photos from Unsplash (free licence, commercial use allowed). Sources and photographers are in `img/credits.json`. Replace them with photos of real Zaman jobs when available: keep the same file names and sizes (hero 1000×1200, service cards 900×600, gallery 800×600, WebP) and no HTML changes are needed.

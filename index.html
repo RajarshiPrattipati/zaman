@@ -90,10 +90,9 @@
   .pills{display:flex;flex-direction:column;gap:12px;margin-top:36px;max-width:430px}
   .pill{background:var(--yellow);color:var(--ink);font-weight:700;font-style:italic;padding:8px 22px;clip-path:polygon(14px 0,calc(100% - 14px) 0,100% 50%,calc(100% - 14px) 100%,14px 100%,0 50%);text-align:center}
 
-  .hero-card{justify-self:end;width:100%;max-width:400px;display:grid;grid-template-columns:1fr 1fr;gap:18px}
-  .house{background:var(--ink);aspect-ratio:1;display:grid;place-items:center;clip-path:polygon(50% 0,100% 38%,100% 100%,0 100%,0 38%);padding-top:22%;box-shadow:0 20px 40px -20px #000}
-  .house svg{width:44%;height:44%;color:var(--yellow)}
-  .owner{grid-column:1/-1;background:var(--ink);border-radius:var(--radius);padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 20px 40px -20px #000}
+  .hero-card{justify-self:end;width:100%;max-width:440px;position:relative}
+  .hero-photo{display:block;width:100%;height:auto;aspect-ratio:5/6;object-fit:cover;border-radius:var(--radius);border:6px solid var(--ink);box-shadow:0 30px 60px -25px rgba(0,0,0,.8)}
+  .owner{position:relative;margin:-44px 18px 0;background:var(--ink);border-radius:var(--radius);padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:12px;box-shadow:0 20px 40px -20px #000}
   .owner b{font-family:"Libre Baskerville",serif;font-style:italic;color:var(--yellow);font-size:1.15rem}
   .owner small{display:block;color:var(--muted);font-size:.85rem}
   .owner a{font-weight:700;color:#fff;font-size:1.05rem}
@@ -113,7 +112,20 @@
   .featured{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:20px}
   .feat{position:relative;background:var(--char);border:1px solid var(--line);border-radius:var(--radius);padding:32px 28px;overflow:hidden;transition:border-color .2s, transform .2s}
   .feat:hover{border-color:var(--yellow);transform:translateY(-4px)}
-  .feat .ic{width:56px;height:56px;border-radius:12px;background:var(--yellow);color:var(--ink);display:grid;place-items:center;margin-bottom:20px;position:relative}
+  .feat > img{display:block;width:calc(100% + 56px);max-width:none;height:auto;aspect-ratio:3/2;object-fit:cover;margin:-32px -28px 0}
+  .feat .ic{width:56px;height:56px;border-radius:12px;background:var(--yellow);color:var(--ink);display:grid;place-items:center;margin:-28px 0 18px;position:relative;box-shadow:0 8px 20px -8px rgba(0,0,0,.6)}
+  /* gallery */
+  .gallery{background:var(--char);border-top:1px solid #2a2a2a}
+  .shots{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+  .shot{position:relative;margin:0;border-radius:var(--radius);overflow:hidden;background:#1a1a1a}
+  .shot.wide{grid-column:span 2}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
+  .shot:hover img{transform:scale(1.04)}
+  .shot figcaption{position:absolute;left:12px;bottom:12px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:.9rem;padding:5px 12px;border-radius:999px}
+  .shots-note{margin-top:14px;color:var(--muted);font-size:.85rem}
+  .shots-note a{text-decoration:underline}
+  @media (max-width:1000px){.shots{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
+  @media (max-width:560px){.shots{grid-auto-rows:150px;gap:10px}.shot.wide{grid-column:span 2}}
   .feat .ic svg{width:30px;height:30px}
   .feat h3{font-size:1.6rem;text-transform:uppercase;margin-bottom:8px;position:relative}
   .feat p{color:var(--muted);position:relative}
@@ -215,7 +227,7 @@
   @media (max-width:1000px){
     .hero-grid{grid-template-columns:1fr;padding:64px 0 72px}
     .hero-slant{width:100%;top:auto;height:300px;clip-path:polygon(0 30%,100% 0,100% 100%,0 100%)}
-    .hero-card{justify-self:start;max-width:360px}
+    .hero-card{justify-self:start;max-width:420px}
     .featured{grid-template-columns:1fr}
     .grid-services{grid-template-columns:repeat(2,1fr)}
     .why-grid,.contact-grid{grid-template-columns:1fr}
@@ -337,11 +349,8 @@
           <div class="pill">Painting Contracting</div>
         </div>
       </div>
-      <div class="hero-card" aria-hidden="true">
-        <div class="house"><svg><use href="#i-hammer"/></svg></div>
-        <div class="house"><svg><use href="#i-screw"/></svg></div>
-        <div class="house"><svg><use href="#i-wrench"/></svg></div>
-        <div class="house"><svg><use href="#i-roller"/></svg></div>
+      <div class="hero-card">
+        <img class="hero-photo" src="img/hero-painting.webp" width="1000" height="1200" alt="Painter rolling yellow paint onto an interior wall" fetchpriority="high">
         <div class="owner">
           <div><b>Zaman ul Haq</b><small>Owner</small></div>
           <a href="tel:+971541263162">054 126 3162</a>
@@ -373,16 +382,19 @@
 
       <div class="featured">
         <article class="feat">
+          <img src="img/svc-renovation.webp" width="900" height="600" alt="Kitchen under renovation with cabinets protected in plastic" loading="lazy">
           <div class="ic"><svg><use href="#i-hammer"/></svg></div>
           <h3>Renovation &amp; Maintenance</h3>
           <p>Kitchen and bathroom refits, repairs, and regular maintenance for homes and offices.</p>
         </article>
         <article class="feat">
+          <img src="img/svc-ceiling.webp" width="900" height="600" alt="Worker on scaffolding installing a ceiling" loading="lazy">
           <div class="ic"><svg><use href="#i-ceiling"/></svg></div>
           <h3>Gypsum Ceilings &amp; Partitions</h3>
           <p>False ceilings, gypsum ceiling tiles and light partition walls.</p>
         </article>
         <article class="feat">
+          <img src="img/svc-painting.webp" width="900" height="600" alt="Paint roller applying white paint to a wall" loading="lazy">
           <div class="ic"><svg><use href="#i-roller"/></svg></div>
           <h3>Painting Contracting</h3>
           <p>Interior and exterior painting for apartments, villas and commercial spaces.</p>
@@ -407,6 +419,30 @@
         <div class="svc"><span class="dot"><svg><use href="#i-spark"/></svg></span>Building Cleaning</div>
         <div class="svc"><span class="dot"><svg><use href="#i-ceiling"/></svg></span>Ceiling Works</div>
       </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="gallery" id="gallery" aria-labelledby="gallery-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">In pictures</span>
+          <h2 id="gallery-h">The work we do</h2>
+        </div>
+        <p>Electrical, plumbing, AC, tiling, plaster and carpentry, through to finished kitchens and bathrooms.</p>
+      </div>
+      <div class="shots">
+        <figure class="shot wide"><img src="img/work-bathroom.webp" width="800" height="600" alt="Finished bathroom with glass shower and vanity" loading="lazy"><figcaption>Bathrooms</figcaption></figure>
+        <figure class="shot"><img src="img/work-electrical.webp" width="800" height="600" alt="Electrician working on an electrical panel" loading="lazy"><figcaption>Electrical</figcaption></figure>
+        <figure class="shot"><img src="img/work-plumbing.webp" width="800" height="600" alt="Plumber repairing bathroom plumbing" loading="lazy"><figcaption>Plumbing</figcaption></figure>
+        <figure class="shot"><img src="img/work-ac.webp" width="800" height="600" alt="Technician servicing a ceiling air conditioning unit" loading="lazy"><figcaption>AC service</figcaption></figure>
+        <figure class="shot"><img src="img/work-tiling.webp" width="800" height="600" alt="Tiler cutting a tile with an angle grinder" loading="lazy"><figcaption>Tiling</figcaption></figure>
+        <figure class="shot"><img src="img/work-plaster.webp" width="800" height="600" alt="Plasterer smoothing a wall with a trowel" loading="lazy"><figcaption>Plaster</figcaption></figure>
+        <figure class="shot"><img src="img/work-carpentry.webp" width="800" height="600" alt="Carpenter using a mitre saw" loading="lazy"><figcaption>Carpentry</figcaption></figure>
+        <figure class="shot wide"><img src="img/work-kitchen.webp" width="800" height="600" alt="Finished kitchen with island and stools" loading="lazy"><figcaption>Kitchens</figcaption></figure>
+      </div>
+      <p class="shots-note">Illustrative photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
     </div>
   </section>
 
