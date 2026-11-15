@@ -5,6 +5,7 @@ description: How gypsum partition walls work for Dubai offices and shops: speed,
 date: 2026-11-13
 category: Ceilings
 keywords: gypsum partition Dubai, office partition walls, drywall partition office, gypsum board partition, shop fit-out partition
+image_alt: Metal stud framing for gypsum partition walls
 ---
 
 Gypsum partition walls, often called drywall or gypsum board partitions, are the standard way to divide office and retail space in Dubai. They create meeting rooms, private offices, storage rooms and changing areas without heavy blockwork. This guide covers how they are built, where they work best, and what to plan before work starts.

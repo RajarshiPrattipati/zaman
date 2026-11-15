@@ -5,6 +5,7 @@ description: Your AC is running but the room stays warm. Here are the common cau
 date: 2026-10-22
 category: AC & MEP
 keywords: ac not cooling dubai, ac running but not cooling, split ac not cold, ac repair dubai, ac blowing warm air
+image_alt: Outdoor air conditioning unit mounted on a wall
 ---
 
 An air conditioner that runs all day without cooling the room is one of the most common maintenance calls in Dubai. The fan blows, but the air is barely cool. Usually the cause is one of a short list of problems, and some you can check yourself.

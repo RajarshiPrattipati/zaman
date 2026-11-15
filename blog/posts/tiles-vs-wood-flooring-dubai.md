@@ -5,6 +5,7 @@ description: Comparing porcelain and ceramic tiles with engineered wood, solid w
 date: 2026-11-03
 category: Flooring & Tiling
 keywords: tiles vs wood flooring dubai, wooden flooring dubai, porcelain tiles dubai, laminate flooring dubai, engineered wood flooring
+image_alt: Close-up of a wooden parquet floor
 ---
 
 Most Dubai apartments and villas come with tiled floors, and many owners later think about switching some rooms to wood. Both can work well. The right choice depends on the room, how it is used, and how much upkeep you want. The local climate matters more than in many other places, because heat, fine sand, humidity and constant AC all affect flooring.

@@ -5,6 +5,7 @@ description: A plain comparison of gypsum, PVC and mineral fibre ceiling tiles f
 date: 2026-10-06
 category: Ceilings
 keywords: gypsum ceiling tiles, PVC ceiling tiles Dubai, mineral fibre ceiling tiles, office ceiling tiles, grid ceiling installation
+image_alt: Technician on a ladder working on an office ceiling
 ---
 
 Tiled ceilings sit in a metal grid hung below the slab. Each tile lifts out, so you can reach cables, ducts and pipes without cutting anything. That is why they are standard in offices, shops, clinics, warehouses and back-of-house areas.

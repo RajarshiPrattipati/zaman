@@ -5,6 +5,7 @@ description: A pre-summer AC maintenance checklist for Dubai homes: filters, coi
 date: 2026-10-18
 category: AC & MEP
 keywords: AC maintenance Dubai, AC servicing checklist, split AC cleaning, AC drain line blocked, pre summer AC service
+image_alt: Wall-mounted split air conditioner
 ---
 
 In Dubai, the AC is the most important system in the house. It runs for most of the year and works hardest in the months when you can least afford a breakdown. A unit that is dirty or poorly maintained uses more power, cools less, and is more likely to leak water or fail completely in peak summer.

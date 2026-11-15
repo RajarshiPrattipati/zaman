@@ -94,5 +94,189 @@
   "photographer": "Puscas Adryan",
   "w": 800,
   "h": 600
+ },
+ {
+  "file": "img/work-ceiling.webp",
+  "alt": "Living room with a lit false ceiling",
+  "photo": "https://unsplash.com/photos/i5UA8CfAD34",
+  "photographer": "Ikshana Productions",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-partition.webp",
+  "alt": "Metal stud framing and drywall for partition walls",
+  "photo": "https://unsplash.com/photos/0Pd_qKGIZ5k",
+  "photographer": "Olek Buzunov",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-glass.webp",
+  "alt": "Glass-walled meeting room in an office",
+  "photo": "https://unsplash.com/photos/fxIcYymZHJg",
+  "photographer": "Hammer Group",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-flooring.webp",
+  "alt": "Wood flooring in a living room",
+  "photo": "https://unsplash.com/photos/Odg3JHAROYM",
+  "photographer": "Maria Kovalets",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-wallpaper.webp",
+  "alt": "Bedroom with a floral wallpaper feature wall",
+  "photo": "https://unsplash.com/photos/VWFv6Ipq6M4",
+  "photographer": "Piotr Rogalski",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-paint-colour.webp",
+  "alt": "Paint colour samples on a wall",
+  "photo": "https://unsplash.com/photos/9lNErGz_3jE",
+  "photographer": "Joseph Perez",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-villa.webp",
+  "alt": "Modern villa exterior with palm trees",
+  "photo": "https://unsplash.com/photos/SkkkMThTstg",
+  "photographer": "Maverick Frame",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "img/work-building.webp",
+  "alt": "Interior building works in progress",
+  "photo": "https://unsplash.com/photos/Te48TPzdcU8",
+  "photographer": "Milivoj Kuhar",
+  "w": 800,
+  "h": 600
+ },
+ {
+  "file": "blog/img/gypsum-false-ceiling-guide-dubai.webp",
+  "alt": "White curved false ceiling with lighting",
+  "photo": "https://unsplash.com/photos/M8LiVogRPAE",
+  "photographer": "Sj",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/gypsum-vs-pvc-ceiling-tiles.webp",
+  "alt": "Technician on a ladder working on an office ceiling",
+  "photo": "https://unsplash.com/photos/diJTXJHGQKg",
+  "photographer": "Ewan Buck",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/interior-paint-dubai-climate.webp",
+  "alt": "Paint roller applying blue paint to a white wall",
+  "photo": "https://unsplash.com/photos/Cl-OpYWFFm0",
+  "photographer": "Theme Photos",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/villa-exterior-painting-dubai.webp",
+  "alt": "Villa building beside a green lawn",
+  "photo": "https://unsplash.com/photos/lotxjfRcx80",
+  "photographer": "Ben Koorengevel",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/ac-maintenance-checklist-dubai.webp",
+  "alt": "Wall-mounted split air conditioner",
+  "photo": "https://unsplash.com/photos/SJnak9YYFWU",
+  "photographer": "Illia Horokhovsky",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/ac-not-cooling-common-causes.webp",
+  "alt": "Outdoor air conditioning unit mounted on a wall",
+  "photo": "https://unsplash.com/photos/ItJsBJlf5Qw",
+  "photographer": "Andrianto Cahyono Putro",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/bathroom-renovation-planning-dubai.webp",
+  "alt": "Bathroom with stone tiles and a wooden vanity",
+  "photo": "https://unsplash.com/photos/9OKuf13OidA",
+  "photographer": "Peter Muniz",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/kitchen-renovation-dubai-apartment.webp",
+  "alt": "Kitchen under renovation with cabinets covered in plastic",
+  "photo": "https://unsplash.com/photos/UqNEbyRQ660",
+  "photographer": "Immo Renovation",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/signs-of-water-leak-apartment.webp",
+  "alt": "Plumber checking pipes under a sink",
+  "photo": "https://unsplash.com/photos/c314Gh8dXAo",
+  "photographer": "Timur Shakerzianov",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/tiles-vs-wood-flooring-dubai.webp",
+  "alt": "Close-up of a wooden parquet floor",
+  "photo": "https://unsplash.com/photos/K6vkTjYciX8",
+  "photographer": "Alex Cooper",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/regrout-or-retile-bathroom.webp",
+  "alt": "Hand placing a white wall tile",
+  "photo": "https://unsplash.com/photos/LyQi9DS7AEg",
+  "photographer": "Charlesdeluvio",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/home-electrical-warning-signs.webp",
+  "alt": "Electrician testing an electrical panel with a multimeter",
+  "photo": "https://unsplash.com/photos/PkHf7BUWbtk",
+  "photographer": "Toolmash Expo",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/move-in-move-out-maintenance-checklist.webp",
+  "alt": "Empty room with a wooden floor and glass walls",
+  "photo": "https://unsplash.com/photos/OHS4AaEYU-I",
+  "photographer": "Moollyem",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/wallpaper-vs-paint-dubai.webp",
+  "alt": "Bedroom with a floral wallpaper feature wall",
+  "photo": "https://unsplash.com/photos/VWFv6Ipq6M4",
+  "photographer": "Piotr Rogalski",
+  "w": 1200,
+  "h": 630
+ },
+ {
+  "file": "blog/img/gypsum-partition-walls-office.webp",
+  "alt": "Metal stud framing for gypsum partition walls",
+  "photo": "https://unsplash.com/photos/59FAd8OnIWo",
+  "photographer": "Olek Buzunov",
+  "w": 1200,
+  "h": 630
  }
 ]

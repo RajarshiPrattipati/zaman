@@ -5,6 +5,7 @@ description: What a gypsum false ceiling is, the main types used in Dubai homes,
 date: 2026-10-02
 category: Ceilings
 keywords: gypsum false ceiling Dubai, gypsum ceiling installation, false ceiling design, cove lighting ceiling, moisture resistant gypsum board
+image_alt: White curved false ceiling with lighting
 ---
 
 A gypsum false ceiling is a second ceiling hung below the concrete slab. It is built from a light steel frame fixed to the slab, with gypsum boards screwed to the underside. The joints are taped, filled and sanded, then the whole surface is painted so it looks like one smooth ceiling.

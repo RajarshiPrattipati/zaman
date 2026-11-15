@@ -5,6 +5,7 @@ description: Cracked grout, hollow tiles or a leak below? Learn how to tell whet
 date: 2026-11-05
 category: Flooring & Tiling
 keywords: regrout bathroom Dubai, retile bathroom, hollow tiles, epoxy grout vs cement grout, bathroom grout repair
+image_alt: Hand placing a white wall tile
 ---
 
 Old grout makes a bathroom look tired. The real question is whether the problem stops at the grout lines or goes deeper into the tiles, the adhesive or the waterproofing underneath. Getting that right decides whether you spend a day on a refresh or need a proper renovation.

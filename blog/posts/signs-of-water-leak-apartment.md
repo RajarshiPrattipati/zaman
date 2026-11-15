@@ -5,6 +5,7 @@ description: How to spot a hidden water leak in a Dubai apartment, from stains a
 date: 2026-11-01
 category: Plumbing
 keywords: hidden water leak apartment, water leak dubai, leak detection dubai, ceiling water stain, plumber dubai
+image_alt: Plumber checking pipes under a sink
 ---
 
 Most leaks in apartments do not show up as a burst pipe. They start small, behind tiles, inside walls or above a false ceiling, and only show themselves weeks later. Catching them early limits the damage to your home and to the flats around you.

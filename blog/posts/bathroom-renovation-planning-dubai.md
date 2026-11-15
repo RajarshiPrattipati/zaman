@@ -5,6 +5,7 @@ description: How to plan a bathroom renovation in a Dubai apartment or villa: sc
 date: 2026-10-26
 category: Renovation
 keywords: bathroom renovation dubai, bathroom remodel dubai, bathroom waterproofing, bathroom renovation apartment, villa bathroom renovation
+image_alt: Bathroom with stone tiles and a wooden vanity
 ---
 
 A bathroom is a small room with a lot going on. Water supply, drainage, electrics, ventilation, waterproofing and finishes all meet in a few square metres. That is why bathroom renovations go wrong when people start with the tiles and work backwards. Good planning starts with what you cannot see once the job is finished.

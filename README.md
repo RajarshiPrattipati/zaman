@@ -13,3 +13,5 @@ If the site moves to its own domain, update `SITE` and `BASE` in `tools/build_bl
 ## Photos
 
 `img/` holds illustrative stock photos from Unsplash (free licence, commercial use allowed). Sources and photographers are in `img/credits.json`. Replace them with photos of real Zaman jobs when available: keep the same file names and sizes (hero 1000×1200, service cards 900×600, gallery 800×600, WebP) and no HTML changes are needed.
+
+Blog header photos live in `blog/img/<slug>.webp` plus a `.jpg` copy for social previews, both 1200×630. Alt text is the `image_alt` field in each post's front matter. Posts without an image fall back to the site share image.

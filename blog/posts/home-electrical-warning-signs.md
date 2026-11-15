@@ -5,6 +5,7 @@ description: Tripping breakers, warm sockets, flickering lights or a burning sme
 date: 2026-11-07
 category: Electrical
 keywords: home electrical problems Dubai, breaker keeps tripping, warm socket, flickering lights, electrician Dubai
+image_alt: Electrician testing an electrical panel with a multimeter
 ---
 
 Most electrical problems give some warning before they become dangerous. The trouble is that the early signs are easy to live with: a breaker that trips now and then, a socket that feels a little warm, a light that flickers on hot afternoons. This guide explains what those signs can mean and what you can safely do about them.

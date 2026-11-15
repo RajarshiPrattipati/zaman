@@ -122,8 +122,6 @@
   .shot img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s ease}
   .shot:hover img{transform:scale(1.04)}
   .shot figcaption{position:absolute;left:12px;bottom:12px;background:var(--yellow);color:var(--ink);font-weight:700;font-size:.9rem;padding:5px 12px;border-radius:999px}
-  .shots-note{margin-top:14px;color:var(--muted);font-size:.85rem}
-  .shots-note a{text-decoration:underline}
   @media (max-width:1000px){.shots{grid-template-columns:repeat(2,1fr);grid-auto-rows:180px}}
   @media (max-width:560px){.shots{grid-auto-rows:150px;gap:10px}.shot.wide{grid-column:span 2}}
   .feat .ic svg{width:30px;height:30px}
@@ -208,6 +206,8 @@
   .post{display:flex;flex-direction:column;gap:8px;background:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:border-color .2s, transform .2s}
   .post:hover{border-color:var(--yellow);transform:translateY(-3px)}
   .post small{color:var(--yellow);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+  .post img{display:block;width:calc(100% + 48px);max-width:none;height:auto;aspect-ratio:1200/630;object-fit:cover;margin:-24px -24px 8px;border-radius:var(--radius) var(--radius) 0 0}
+  .post{overflow:hidden}
   .post b{font-size:1.2rem;line-height:1.3}
   .post span{color:var(--muted);font-size:.96rem}
   @media (max-width:1000px){.posts{grid-template-columns:1fr}}
@@ -430,7 +430,7 @@
           <span class="eyebrow">In pictures</span>
           <h2 id="gallery-h">The work we do</h2>
         </div>
-        <p>Electrical, plumbing, AC, tiling, plaster and carpentry, through to finished kitchens and bathrooms.</p>
+        <p>Ceilings, partitions, paint, tiling, flooring, plumbing, electrical and AC, inside and out.</p>
       </div>
       <div class="shots">
         <figure class="shot wide"><img src="img/work-bathroom.webp" width="800" height="600" alt="Finished bathroom with glass shower and vanity" loading="lazy"><figcaption>Bathrooms</figcaption></figure>
@@ -441,8 +441,15 @@
         <figure class="shot"><img src="img/work-plaster.webp" width="800" height="600" alt="Plasterer smoothing a wall with a trowel" loading="lazy"><figcaption>Plaster</figcaption></figure>
         <figure class="shot"><img src="img/work-carpentry.webp" width="800" height="600" alt="Carpenter using a mitre saw" loading="lazy"><figcaption>Carpentry</figcaption></figure>
         <figure class="shot wide"><img src="img/work-kitchen.webp" width="800" height="600" alt="Finished kitchen with island and stools" loading="lazy"><figcaption>Kitchens</figcaption></figure>
+        <figure class="shot"><img src="img/work-ceiling.webp" width="800" height="600" alt="Living room with a lit false ceiling" loading="lazy"><figcaption>False ceilings</figcaption></figure>
+        <figure class="shot"><img src="img/work-partition.webp" width="800" height="600" alt="Metal stud framing and drywall for partition walls" loading="lazy"><figcaption>Partitions</figcaption></figure>
+        <figure class="shot"><img src="img/work-glass.webp" width="800" height="600" alt="Glass-walled meeting room in an office" loading="lazy"><figcaption>Glass fixing</figcaption></figure>
+        <figure class="shot"><img src="img/work-flooring.webp" width="800" height="600" alt="Wood flooring in a living room" loading="lazy"><figcaption>Wood flooring</figcaption></figure>
+        <figure class="shot"><img src="img/work-wallpaper.webp" width="800" height="600" alt="Bedroom with a floral wallpaper feature wall" loading="lazy"><figcaption>Wallpaper</figcaption></figure>
+        <figure class="shot"><img src="img/work-paint-colour.webp" width="800" height="600" alt="Paint colour samples on a wall" loading="lazy"><figcaption>Paint &amp; colour</figcaption></figure>
+        <figure class="shot wide"><img src="img/work-villa.webp" width="800" height="600" alt="Modern villa exterior with palm trees" loading="lazy"><figcaption>Villa exteriors</figcaption></figure>
+        <figure class="shot wide"><img src="img/work-building.webp" width="800" height="600" alt="Interior building works in progress" loading="lazy"><figcaption>Building works</figcaption></figure>
       </div>
-      <p class="shots-note">Illustrative photos via <a href="https://unsplash.com" target="_blank" rel="noopener">Unsplash</a>.</p>
     </div>
   </section>
 
@@ -502,9 +509,9 @@
       </div>
       <div class="posts">
         <!-- BLOG:START -->
-        <a class="post" href="blog/gypsum-partition-walls-office/"><small>Ceilings · 13 November 2026</small><b>Gypsum Partition Walls for Offices and Shops in Dubai</b><span>How gypsum partition walls work for Dubai offices and shops: speed, sound insulation, fire-rated board, glass and door options, approvals and planning.</span></a>
-        <a class="post" href="blog/wallpaper-vs-paint-dubai/"><small>Painting · 11 November 2026</small><b>Wallpaper vs Paint: Which Is Better for Dubai Homes?</b><span>Comparing wallpaper and paint for Dubai homes, covering humidity, AC, wall prep, vinyl and non-woven wallpaper, feature walls, removal and rentals.</span></a>
-        <a class="post" href="blog/move-in-move-out-maintenance-checklist/"><small>Maintenance · 9 November 2026</small><b>Move-In and Move-Out Maintenance Checklist for Dubai Homes</b><span>A practical move-in and move-out maintenance checklist for Dubai tenants and landlords covering paint, AC, plumbing, electrical, tiles and photos.</span></a>
+        <a class="post" href="blog/gypsum-partition-walls-office/"><img src="blog/img/gypsum-partition-walls-office.webp" width="1200" height="630" alt="" loading="lazy"><small>Ceilings · 13 November 2026</small><b>Gypsum Partition Walls for Offices and Shops in Dubai</b><span>How gypsum partition walls work for Dubai offices and shops: speed, sound insulation, fire-rated board, glass and door options, approvals and planning.</span></a>
+        <a class="post" href="blog/wallpaper-vs-paint-dubai/"><img src="blog/img/wallpaper-vs-paint-dubai.webp" width="1200" height="630" alt="" loading="lazy"><small>Painting · 11 November 2026</small><b>Wallpaper vs Paint: Which Is Better for Dubai Homes?</b><span>Comparing wallpaper and paint for Dubai homes, covering humidity, AC, wall prep, vinyl and non-woven wallpaper, feature walls, removal and rentals.</span></a>
+        <a class="post" href="blog/move-in-move-out-maintenance-checklist/"><img src="blog/img/move-in-move-out-maintenance-checklist.webp" width="1200" height="630" alt="" loading="lazy"><small>Maintenance · 9 November 2026</small><b>Move-In and Move-Out Maintenance Checklist for Dubai Homes</b><span>A practical move-in and move-out maintenance checklist for Dubai tenants and landlords covering paint, AC, plumbing, electrical, tiles and photos.</span></a>
         <!-- BLOG:END -->
       </div>
     </div>

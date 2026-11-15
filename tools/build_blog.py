@@ -47,6 +47,11 @@ def parse_post(path):
     meta["minutes"] = max(1, math.ceil(words / 220))
     meta["html"], meta["toc"] = md_to_html(body)
     meta["url"] = f"blog/{meta['slug']}/"   # relative to the site root
+    # optional header photo: blog/img/<slug>.webp (display) + .jpg (social previews), 1200x630
+    has_img = (ROOT / "blog" / "img" / f"{meta['slug']}.webp").exists()
+    meta["image"] = f"blog/img/{meta['slug']}.webp" if has_img else ""
+    meta["og_image"] = f"{URL}/blog/img/{meta['slug']}.jpg" if has_img else f"{URL}/og.png"
+    meta.setdefault("image_alt", "")
     return meta
 
 
@@ -133,7 +138,8 @@ def fmt_date(d):
     return f"{d.day} {d.strftime('%B %Y')}"
 
 
-def head(title, desc, canonical, og_type="website", extra=""):
+def head(title, desc, canonical, og_type="website", extra="", og_image=None):
+    og_image = og_image or f"{URL}/og.png"
     t, d = html.escape(title), html.escape(desc)
     return f"""<!doctype html>
 <html lang="en">
@@ -151,13 +157,13 @@ def head(title, desc, canonical, og_type="website", extra=""):
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:url" content="{canonical}">
-<meta property="og:image" content="{URL}/og.png">
+<meta property="og:image" content="{og_image}">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{t}">
 <meta name="twitter:description" content="{d}">
-<meta name="twitter:image" content="{URL}/og.png">
+<meta name="twitter:image" content="{og_image}">
 {extra}{FONTS}
 <link rel="stylesheet" href="{REL}blog/blog.css">
 </head>
@@ -228,7 +234,10 @@ ORG = {"@type": "HomeAndConstructionBusiness", "name": BRAND + " Est.", "url": U
 
 
 def card(p, heading="h2"):
+    thumb = (f'<img class="thumb" src="{REL}{p["image"]}" width="1200" height="630" alt="" loading="lazy">'
+             if p["image"] else "")
     return f"""<article class="card">
+  {thumb}
   <p class="meta"><span class="cat">{html.escape(p['category'])}</span><time datetime="{p['date']}">{fmt_date(p['date_obj'])}</time></p>
   <{heading}><a href="{REL}{p['url']}">{html.escape(p['title'])}</a></{heading}>
   <p>{html.escape(p['description'])}</p>
@@ -257,7 +266,7 @@ def render_post(p, posts):
         {"@type": "BlogPosting", "headline": p["title"], "description": p["description"],
          "datePublished": p["date"], "dateModified": p["date"], "wordCount": p["words"],
          "articleSection": p["category"], "keywords": p.get("keywords", ""),
-         "image": URL + "/og.png", "mainEntityOfPage": canonical, "inLanguage": "en",
+         "image": p["og_image"], "mainEntityOfPage": canonical, "inLanguage": "en",
          "author": {"@type": "Organization", "name": BRAND, "url": URL + "/"},
          "publisher": ORG},
         {"@type": "BreadcrumbList", "itemListElement": [
@@ -271,7 +280,9 @@ def render_post(p, posts):
         items = "".join(f'<li><a href="#{i}">{html.escape(t)}</a></li>' for i, t in p["toc"])
         toc = f'<nav class="toc" aria-label="In this article"><h2>In this article</h2><ol>{items}</ol></nav>'
     rel = "\n".join(card(o, "h3") for o in related)
-    return (head(f"{p['title']} | {BRAND}", p["description"], canonical, "article", extra) + f"""
+    figure = (f'<figure class="post-img"><img src="{REL}{p["image"]}" width="1200" height="630" '
+              f'alt="{html.escape(p["image_alt"])}" fetchpriority="high"></figure>' if p["image"] else "")
+    return (head(f"{p['title']} | {BRAND}", p["description"], canonical, "article", extra, p["og_image"]) + f"""
 <main id="main">
   <div class="post-hero">
     <div class="wrap narrow">
@@ -281,6 +292,7 @@ def render_post(p, posts):
     </div>
   </div>
   <article class="wrap narrow prose">
+    {figure}
     {toc}
     {p['html']}
     {cta()}
@@ -364,7 +376,9 @@ def update_home(posts):
     if start not in src:
         return
     cards = "\n".join(
-        f'        <a class="post" href="{p["url"]}"><small>{html.escape(p["category"])} · {fmt_date(p["date_obj"])}</small>'
+        f'        <a class="post" href="{p["url"]}">'
+        + (f'<img src="{p["image"]}" width="1200" height="630" alt="" loading="lazy">' if p["image"] else "")
+        + f'<small>{html.escape(p["category"])} · {fmt_date(p["date_obj"])}</small>'
         f'<b>{html.escape(p["title"])}</b><span>{html.escape(p["description"])}</span></a>' for p in posts[:3])
     new = src[:src.index(start) + len(start)] + "\n" + cards + "\n        " + src[src.index(end):]
     index.write_text(new, encoding="utf-8")
