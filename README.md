@@ -12,6 +12,6 @@ If the site moves to its own domain, update `SITE` and `BASE` in `tools/build_bl
 
 ## Photos
 
-`img/` holds illustrative stock photos from Unsplash (free licence, commercial use allowed). Sources and photographers are in `img/credits.json`. Replace them with photos of real Zaman jobs when available: keep the same file names and sizes (hero 1000×1200, service cards 900×600, gallery 800×600, WebP) and no HTML changes are needed.
-
-Blog header photos live in `blog/img/<slug>.webp` plus a `.jpg` copy for social previews, both 1200×630. Alt text is the `image_alt` field in each post's front matter. Posts without an image fall back to the site share image.
+- `img/hero-staircase.webp`, `img/svc-*.webp` and `img/projects/*.webp` are Zaman's own project photos (from the owner's WhatsApp album), cropped to fixed sizes: hero 5:6, service cards 3:2, gallery 4:3, WebP.
+- Blog header photos live in `blog/img/<slug>.webp` plus a `.jpg` copy for social previews, 1200×630. Alt text is `image_alt` in each post's front matter. Six use project photos; the rest are free-licence Unsplash photos listed in `img/credits.json`. Swap in project photos as they become available.
+- The raw photo folder `IMG2/` is git-ignored.

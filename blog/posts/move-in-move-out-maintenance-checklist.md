@@ -5,7 +5,7 @@ description: A practical move-in and move-out maintenance checklist for Dubai te
 date: 2026-11-09
 category: Maintenance
 keywords: move out checklist Dubai, move in inspection Dubai, tenant maintenance checklist, landlord handover Dubai, apartment handover inspection
-image_alt: Empty room with a wooden floor and glass walls
+image_alt: Finished room with floor protection before handover
 ---
 
 Moving into or out of a rental in Dubai is busy, and maintenance is easy to rush. A careful check at both ends of a tenancy protects tenants and landlords. It makes the condition of the property clear, reduces disagreements over the security deposit, and catches small problems before they become expensive ones.

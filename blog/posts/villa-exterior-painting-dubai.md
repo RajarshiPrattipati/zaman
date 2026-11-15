@@ -5,7 +5,7 @@ description: How to plan exterior painting for a Dubai villa, covering sun and U
 date: 2026-10-14
 category: Painting
 keywords: villa exterior painting Dubai, exterior wall paint UAE, best time to paint exterior, exterior crack repair, boundary wall painting
-image_alt: Villa building beside a green lawn
+image_alt: Villa exterior with scaffolding during refurbishment
 ---
 
 The outside of a villa takes a beating in Dubai. Strong sun fades colour and breaks down paint film. Wind carries fine sand that sticks to walls and wears surfaces. Villas near the coast also deal with salt in the air, which attacks metal and can affect coatings. Add large temperature swings between day and night, and small cracks open up over time.

@@ -1,173 +1,5 @@
 [
  {
-  "file": "img/hero-painting.webp",
-  "alt": "Painter rolling yellow paint onto a wall",
-  "photo": "https://unsplash.com/photos/1iho4gvI4-g",
-  "photographer": "Ali Mkumbwa",
-  "w": 1000,
-  "h": 1200
- },
- {
-  "file": "img/svc-renovation.webp",
-  "alt": "Kitchen under renovation with cabinets protected in plastic",
-  "photo": "https://unsplash.com/photos/UqNEbyRQ660",
-  "photographer": "Immo Renovation",
-  "w": 900,
-  "h": 600
- },
- {
-  "file": "img/svc-ceiling.webp",
-  "alt": "Worker on scaffolding installing a ceiling",
-  "photo": "https://unsplash.com/photos/fsa8AHFoJH8",
-  "photographer": "Glenov Brankovic",
-  "w": 900,
-  "h": 600
- },
- {
-  "file": "img/svc-painting.webp",
-  "alt": "Paint roller applying white paint to a wall",
-  "photo": "https://unsplash.com/photos/rMVjOX8nm2U",
-  "photographer": "Andrew Itaga",
-  "w": 900,
-  "h": 600
- },
- {
-  "file": "img/work-electrical.webp",
-  "alt": "Electrician working on an electrical panel",
-  "photo": "https://unsplash.com/photos/GXLPLG3_Vf4",
-  "photographer": "Raze Solar",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-plumbing.webp",
-  "alt": "Plumber repairing bathroom plumbing",
-  "photo": "https://unsplash.com/photos/jaP5ClBdIyU",
-  "photographer": "Bhagya Laxmi",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-ac.webp",
-  "alt": "Technician servicing a ceiling air conditioning unit",
-  "photo": "https://unsplash.com/photos/WwzK2S0h6zU",
-  "photographer": "Birmingham Airduct Cleaning Services",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-tiling.webp",
-  "alt": "Tiler cutting a tile with an angle grinder",
-  "photo": "https://unsplash.com/photos/6dnuVViEiR8",
-  "photographer": "Renovations Certified",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-plaster.webp",
-  "alt": "Plasterer smoothing a wall with a trowel",
-  "photo": "https://unsplash.com/photos/-WK5bA14jt0",
-  "photographer": "Derrick Pare",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-carpentry.webp",
-  "alt": "Carpenter using a mitre saw",
-  "photo": "https://unsplash.com/photos/WEWTGkPUVT0",
-  "photographer": "Annie Gray",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-bathroom.webp",
-  "alt": "Finished bathroom with glass shower and vanity",
-  "photo": "https://unsplash.com/photos/g51F6-WYzyU",
-  "photographer": "Lotus Design N Print",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-kitchen.webp",
-  "alt": "Finished kitchen with island and stools",
-  "photo": "https://unsplash.com/photos/ilbLEHMhxMA",
-  "photographer": "Puscas Adryan",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-ceiling.webp",
-  "alt": "Living room with a lit false ceiling",
-  "photo": "https://unsplash.com/photos/i5UA8CfAD34",
-  "photographer": "Ikshana Productions",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-partition.webp",
-  "alt": "Metal stud framing and drywall for partition walls",
-  "photo": "https://unsplash.com/photos/0Pd_qKGIZ5k",
-  "photographer": "Olek Buzunov",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-glass.webp",
-  "alt": "Glass-walled meeting room in an office",
-  "photo": "https://unsplash.com/photos/fxIcYymZHJg",
-  "photographer": "Hammer Group",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-flooring.webp",
-  "alt": "Wood flooring in a living room",
-  "photo": "https://unsplash.com/photos/Odg3JHAROYM",
-  "photographer": "Maria Kovalets",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-wallpaper.webp",
-  "alt": "Bedroom with a floral wallpaper feature wall",
-  "photo": "https://unsplash.com/photos/VWFv6Ipq6M4",
-  "photographer": "Piotr Rogalski",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-paint-colour.webp",
-  "alt": "Paint colour samples on a wall",
-  "photo": "https://unsplash.com/photos/9lNErGz_3jE",
-  "photographer": "Joseph Perez",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-villa.webp",
-  "alt": "Modern villa exterior with palm trees",
-  "photo": "https://unsplash.com/photos/SkkkMThTstg",
-  "photographer": "Maverick Frame",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "img/work-building.webp",
-  "alt": "Interior building works in progress",
-  "photo": "https://unsplash.com/photos/Te48TPzdcU8",
-  "photographer": "Milivoj Kuhar",
-  "w": 800,
-  "h": 600
- },
- {
-  "file": "blog/img/gypsum-false-ceiling-guide-dubai.webp",
-  "alt": "White curved false ceiling with lighting",
-  "photo": "https://unsplash.com/photos/M8LiVogRPAE",
-  "photographer": "Sj",
-  "w": 1200,
-  "h": 630
- },
- {
   "file": "blog/img/gypsum-vs-pvc-ceiling-tiles.webp",
   "alt": "Technician on a ladder working on an office ceiling",
   "photo": "https://unsplash.com/photos/diJTXJHGQKg",
@@ -180,14 +12,6 @@
   "alt": "Paint roller applying blue paint to a white wall",
   "photo": "https://unsplash.com/photos/Cl-OpYWFFm0",
   "photographer": "Theme Photos",
-  "w": 1200,
-  "h": 630
- },
- {
-  "file": "blog/img/villa-exterior-painting-dubai.webp",
-  "alt": "Villa building beside a green lawn",
-  "photo": "https://unsplash.com/photos/lotxjfRcx80",
-  "photographer": "Ben Koorengevel",
   "w": 1200,
   "h": 630
  },
@@ -208,22 +32,6 @@
   "h": 630
  },
  {
-  "file": "blog/img/bathroom-renovation-planning-dubai.webp",
-  "alt": "Bathroom with stone tiles and a wooden vanity",
-  "photo": "https://unsplash.com/photos/9OKuf13OidA",
-  "photographer": "Peter Muniz",
-  "w": 1200,
-  "h": 630
- },
- {
-  "file": "blog/img/kitchen-renovation-dubai-apartment.webp",
-  "alt": "Kitchen under renovation with cabinets covered in plastic",
-  "photo": "https://unsplash.com/photos/UqNEbyRQ660",
-  "photographer": "Immo Renovation",
-  "w": 1200,
-  "h": 630
- },
- {
   "file": "blog/img/signs-of-water-leak-apartment.webp",
   "alt": "Plumber checking pipes under a sink",
   "photo": "https://unsplash.com/photos/c314Gh8dXAo",
@@ -240,26 +48,10 @@
   "h": 630
  },
  {
-  "file": "blog/img/regrout-or-retile-bathroom.webp",
-  "alt": "Hand placing a white wall tile",
-  "photo": "https://unsplash.com/photos/LyQi9DS7AEg",
-  "photographer": "Charlesdeluvio",
-  "w": 1200,
-  "h": 630
- },
- {
   "file": "blog/img/home-electrical-warning-signs.webp",
   "alt": "Electrician testing an electrical panel with a multimeter",
   "photo": "https://unsplash.com/photos/PkHf7BUWbtk",
   "photographer": "Toolmash Expo",
-  "w": 1200,
-  "h": 630
- },
- {
-  "file": "blog/img/move-in-move-out-maintenance-checklist.webp",
-  "alt": "Empty room with a wooden floor and glass walls",
-  "photo": "https://unsplash.com/photos/OHS4AaEYU-I",
-  "photographer": "Moollyem",
   "w": 1200,
   "h": 630
  },

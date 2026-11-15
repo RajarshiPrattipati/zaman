@@ -5,7 +5,7 @@ description: Renovating a kitchen in a Dubai apartment? Plan for approvals, buil
 date: 2026-10-29
 category: Renovation
 keywords: kitchen renovation dubai, apartment kitchen renovation, kitchen remodel dubai, kitchen cabinets dubai, kitchen fit out dubai
-image_alt: Kitchen under renovation with cabinets covered in plastic
+image_alt: Finished kitchen with dark timber cabinets and a lit gypsum ceiling
 ---
 
 Kitchen renovations in apartments are different from villas. You share walls, floors, drainage and electrical risers with your neighbours, and the building has its own rules about what you can change and when. Planning around those limits from the start saves time and avoids work being stopped halfway.
