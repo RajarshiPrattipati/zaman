@@ -190,6 +190,15 @@
   footer ul{list-style:none;display:grid;gap:8px}
   footer a:hover{color:var(--yellow)}
   .foot-ar{font-family:"Cairo",sans-serif;color:#ddd;margin-top:10px;font-size:1.1rem}
+  /* blog teaser */
+  .blog{background:var(--char);border-top:1px solid #2a2a2a}
+  .posts{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .post{display:flex;flex-direction:column;gap:8px;background:var(--ink);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:border-color .2s, transform .2s}
+  .post:hover{border-color:var(--yellow);transform:translateY(-3px)}
+  .post small{color:var(--yellow);font-weight:600;font-size:.85rem;text-transform:uppercase;letter-spacing:.06em}
+  .post b{font-size:1.2rem;line-height:1.3}
+  .post span{color:var(--muted);font-size:.96rem}
+  @media (max-width:1000px){.posts{grid-template-columns:1fr}}
   .copy{border-top:1px solid #222;padding-top:22px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;color:#9a9a9a;font-size:.88rem}
 
   /* ---------- floating buttons ---------- */
@@ -233,6 +242,7 @@
     .lic-meta{gap:18px}
   }
 </style>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Zaman Technical Services Est.","alternateName":"مؤسسة زمان للخدمات الفنية","url":"https://rajarshiprattipati.github.io/zaman/","logo":"https://rajarshiprattipati.github.io/zaman/favicon.svg","image":"https://rajarshiprattipati.github.io/zaman/og.png","telephone":"+971541263162","email":"haaqinzmamul@gmail.com","address":{"@type":"PostalAddress","streetAddress":"Office SM1-02-722, Port Saeed","addressLocality":"Deira, Dubai","addressCountry":"AE"},"areaServed":{"@type":"City","name":"Dubai"},"founder":{"@type":"Person","name":"Zaman ul Haq"},"knowsAbout":["Renovation","Maintenance","Gypsum ceilings","Painting","Plumbing","Electrical works","Floor and wall tiling","Carpentry","AC installation"]}</script>
 </head>
 <body>
 
@@ -288,6 +298,7 @@
       <a href="#services">Services</a>
       <a href="#why">Why Us</a>
       <a href="#process">Process</a>
+      <a href="blog/">Blog</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="nav-cta">
@@ -300,6 +311,7 @@
     <a href="#services">Services</a>
     <a href="#why">Why Us</a>
     <a href="#process">Process</a>
+    <a href="blog/">Blog</a>
     <a href="#contact">Contact</a>
     <a class="btn btn-yellow" href="tel:+971541263162"><svg><use href="#i-phone"/></svg>Call 054 126 3162</a>
   </div>
@@ -442,6 +454,26 @@
     </div>
   </div>
 
+  <!-- BLOG -->
+  <section class="blog" id="blog">
+    <div class="wrap">
+      <div class="sec-head">
+        <div>
+          <span class="eyebrow">From the blog</span>
+          <h2>Guides &amp; advice</h2>
+        </div>
+        <a class="btn btn-ghost" href="blog/">All articles</a>
+      </div>
+      <div class="posts">
+        <!-- BLOG:START -->
+        <a class="post" href="/zaman/blog/gypsum-partition-walls-office/"><small>Ceilings · 13 November 2026</small><b>Gypsum Partition Walls for Offices and Shops in Dubai</b><span>How gypsum partition walls work for Dubai offices and shops: speed, sound insulation, fire-rated board, glass and door options, approvals and planning.</span></a>
+        <a class="post" href="/zaman/blog/wallpaper-vs-paint-dubai/"><small>Painting · 11 November 2026</small><b>Wallpaper vs Paint: Which Is Better for Dubai Homes?</b><span>Comparing wallpaper and paint for Dubai homes, covering humidity, AC, wall prep, vinyl and non-woven wallpaper, feature walls, removal and rentals.</span></a>
+        <a class="post" href="/zaman/blog/move-in-move-out-maintenance-checklist/"><small>Maintenance · 9 November 2026</small><b>Move-In and Move-Out Maintenance Checklist for Dubai Homes</b><span>A practical move-in and move-out maintenance checklist for Dubai tenants and landlords covering paint, AC, plumbing, electrical, tiles and photos.</span></a>
+        <!-- BLOG:END -->
+      </div>
+    </div>
+  </section>
+
   <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="wrap contact-grid">
@@ -572,6 +604,7 @@
           <li><a href="#services">Painting Contracting</a></li>
           <li><a href="#services">Plumbing &amp; Electrical</a></li>
           <li><a href="#services">AC Installation</a></li>
+          <li><a href="blog/">Blog &amp; guides</a></li>
         </ul>
       </div>
     </div>
